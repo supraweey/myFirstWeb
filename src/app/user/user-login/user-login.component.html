@@ -1,0 +1,30 @@
+<style>
+    .content {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 3rem;
+      }
+      .element {
+      margin-top: 10px;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+    
+    <div class="content">
+      <div class="row justify-content-center">
+    <div class="row">
+        <div class="col-12">
+          <input type="email" class="form-control element" #usernameText placeholder="Username" (focus)="onInputFocus()">
+          <input type="password" class="form-control element" #passwordText placeholder="Password" (focus)="onInputFocus()">
+          <p class="error" *ngIf="isErrorVisible">Invalid {{ errorText }}</p>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button type="button" class="btn btn-outline-success element" (click)="handleNextAction(usernameText.value, passwordText.value)">Login</button>
+        </div>
+      </div>
+      </div>
+      </div>
