@@ -1,1 +1,11 @@
 <p>user-add works!</p>
+<div class="row">
+    <button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="getClick()">Get</button>
+    <button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="postClick()">Post</button>
+    <button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="onClear()">Clear</button>
+    @for (item of arrayList;track item; let index = $index) {
+        <div style="color: {{item?.color ?? 'black'}}">{{item.name}} , {{index}}, {{item.hCode ?? "-"}}</div>
+        }
+         
+        <div style="color: {{objRes?.color ?? 'black'}}">{{objRes?.name}} , {{objRes?.hCode ?? "-"}}</div>
+</div>

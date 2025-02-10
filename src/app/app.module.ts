@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './main/core.module';
 import { UserLoginComponent } from './user/user-login/user-login.component'
+import { NgxPullToRefreshModule } from 'ngx-pull-to-refresh';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UserLoginComponent } from './user/user-login/user-login.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    NgxPullToRefreshModule
   ],
   providers: [],
   bootstrap: [AppComponent]

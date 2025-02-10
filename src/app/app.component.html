@@ -1,1 +1,11 @@
-<router-outlet />
+<ngx-pull-to-refresh
+	spinnerColor="#ff0000"
+  [spinnerSize]="50"
+	[distanceForRefresh]="40"
+	[isEnable]="true"
+	[targetElement]="targetElement"
+	(refresh)="myRefreshEvent($event, 'refresh')"
+	(loadMore)="alert('loadmore')"
+	style="display:block;height:100%;">
+    <router-outlet />
+</ngx-pull-to-refresh>

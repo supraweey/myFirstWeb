@@ -16,4 +16,12 @@ export class UserListComponent {
 
   }
 
+  changePage() {
+    this.router.navigateByUrl('user/add', {
+      state: {
+        data: 'test'
+      }
+    });
+  }
+
 }

@@ -7,7 +7,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   {
-    path : '',
+    path : 'login',
     component : UserLoginComponent
    },
    {
@@ -15,7 +15,7 @@ const routes: Routes = [
      component : UserProfileComponent
     },
   {
-    path : 'list',
+    path : '',
     component : UserListComponent
    },
    {
