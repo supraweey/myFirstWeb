@@ -30,7 +30,7 @@ export class UserAddComponent implements OnInit{
         console.log('Success');
         //this.arrayList = res.data;
         const temp = res.data;
-        this.arrayList = temp.filter((x: any) => x.status === 300);
+        this.arrayList = temp;
       })
       .catch((error: any) => {
         console.error('Failed to getDetail => ' + error);

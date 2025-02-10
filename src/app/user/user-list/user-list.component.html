@@ -1,2 +1,14 @@
 <p>user-list works!</p>
 <button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="changePage()">NavToAdd</button>
+
+<input type="email" class="form-control" [(ngModel)]="userName" placeholder="Username">
+<input type="password" class="form-control" [(ngModel)]="password" placeholder="Password">
+<button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="submitClick()">Submit</button>
+
+<button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="setValue()">SET</button>
+<button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="getValue()">GET</button>
+<button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="setTempValue()">SET TEMP</button>
+<button type="button" class="btn btn-outline-success ms-3 mt-3" (click)="clearValue()">CLEAR VALUE</button>
+
+<app-child-user></app-child-user>
+<app-child2-user></app-child2-user>
